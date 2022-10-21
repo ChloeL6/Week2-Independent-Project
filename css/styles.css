@@ -2,3 +2,26 @@
   display: none;
 }
 
+.img {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color:blue ;
+}
+
+.all {
+  margin-block: 15px;
+  margin-left: 10px;
+}
+
+.button{
+  background-color: dodgerblue;
+  text-emphasis-color: white;
+
+}
+.container {
+  border-style: solid;
