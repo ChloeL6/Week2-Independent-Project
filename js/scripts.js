@@ -6,13 +6,13 @@ function getData(event) {
   const code = document.querySelector("input[name='code']:checked").value;
   const dog = document.querySelector("input[name='dog']:checked").value;
 
-let result = "Your language is ";
-if (code === "no" || flavor === "vanila") {
-  result = result + "Ruby";
+let result = "The first program language you should learn is ";
+if (code === "no" || flavor === "vanila" || learn === "It's challenging") {
+  result = result + "Ruby.";
 } else if (activities === "Practice coding" && learn === "It's fun"){
-  result = result + "Python";
+  result = result + "Python.";
 } else if (code === "Yes" || dog === "Absolutely") {
-  result = result + "JavaScript";
+  result = result + "JavaScript.";
 }
 
 document.getElementById("mainOutput").removeAttribute("class");
