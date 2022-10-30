@@ -27,8 +27,6 @@ function getData(event) {
   const learn = document.getElementById("learn").value;
   const code = document.querySelector("input[name='code']:checked").value;
   const dog = document.querySelector("input[name='dog']:checked").value;
-console.log("act: " + activities); // got data from the form
-console.log("act: " + flavor);
 
 
 let finalResult = languageSuggester(activities, flavor, learn, code, dog);
@@ -37,7 +35,6 @@ document.getElementById("mainOutput").removeAttribute("class");
 document.getElementById("questions").classList.add("hidden");
 
 document.getElementById("outPut").innerText = finalResult;
-console.log(finalResult);
 }
 
 function goBackButton() {
