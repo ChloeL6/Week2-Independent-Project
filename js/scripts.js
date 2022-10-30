@@ -1,7 +1,6 @@
 function getData(event) {
   event.preventDefault();
   const activities = document.getElementById("activities");
-  console.log(activities.options);
   const flavor = document.getElementById("flavor").value;
   const learn = document.getElementById("learn").value;
   const code = document.querySelector("input[name='code']:checked").value;
@@ -14,6 +13,8 @@ if (code === "no" || flavor === "vanila" || learn === "It's challenging") {
   result = result + "Python.";
 } else if (code === "Yes" || dog === "Absolutely") {
   result = result + "JavaScript.";
+} else {
+  result = "You can learn whichever you want for now!";
 }
 
 document.getElementById("mainOutput").removeAttribute("class");
