@@ -17,10 +17,14 @@ if (code === "no" || flavor === "vanila" || learn === "It's challenging") {
 }
 
 document.getElementById("mainOutput").removeAttribute("class");
-
 document.getElementById("questions").classList.add("hidden");
 
 document.getElementById("outPut").innerText = result;
+}
+
+function goBackButton() {
+  document.getElementById("questions").removeAttribute("class");
+  document.getElementById("mainOutput").classList.add("hidden");
 }
 
 window.addEventListener("load", function() {
@@ -28,5 +32,5 @@ window.addEventListener("load", function() {
 });
 
 window.addEventListener("load", function() {
-  document.getElementById("backButton").addEventListener("click",getData)
-}
+  document.getElementById("backButton").addEventListener("click", goBackButton);
+});

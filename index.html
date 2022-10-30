@@ -1,79 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/scripts.js"></script>
-  <img src="img/laptop.jpg" alt="laptop" class="img">
-  <title>Programming Language Suggester</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js"></script>
+    <img src="img/laptop.jpg" alt="laptop" class="img" />
+    <title>Programming Language Suggester</title>
+  </head>
 
-<body>
-  <div class="container">
-    <h1>Programming Language Suggester</h1>
-    <form id="questions" >
-    <div class="all">
-      <label>
-        1. What do you do on Friday?
-      </label><br>
-      <select name="activities" id="activities">
-        <option value="1">Go hiking</option>
-        <option>Practice coding</option>
-        <option>Go racing</option>
-      </select><br>
+  <body>
+    <div class="container">
+      <h1>Programming Language Suggester</h1>
+      <form id="questions">
+        <div class="all">
+          <label> 1. What do you do on Friday? </label><br />
+          <select name="activities" id="activities">
+            <option value="1">Go hiking</option>
+            <option>Practice coding</option>
+            <option>Go racing</option></select
+          ><br />
+        </div>
+
+        <div class="all">
+          <label> 2. What kind of ice-cream flavor do you like? </label><br />
+          <select name="flavor" id="flavor">
+            <option>Vanila</option>
+            <option>Chocolate</option>
+            <option>Mint</option></select
+          ><br />
+        </div>
+
+        <div class="all">
+          <label> 3. Why do you want to learn coding? </label><br />
+          <select name="learn" id="learn">
+            <option>It's fun</option>
+            <option>It's challenging</option>
+            <option>I don't know</option></select
+          ><br />
+        </div>
+
+        <div class="all">
+          <label>
+            4. Do you like coding? <br />
+            <input type="radio" name="code" value="Yes" checked /> Yes
+          </label>
+          <label> <input type="radio" name="code" value="No" /> No </label
+          ><br />
+        </div>
+
+        <div class="all">
+          <label>
+            5. Do you like dog? <br />
+            <input type="radio" name="dog" value="dog1" checked /> I love dogs!
+          </label>
+          <label>
+            <input type="radio" name="dog" value="dog2" /> Absolutely! </label
+          ><br />
+        </div>
+
+        <button type="submit" class="button">Submit</button>
+      </form>
+
+      <div id="mainOutput" class="hidden">
+        <h3>Results</h3>
+        <p id="outPut"></p>
+        <button type="button" id="backButton" class="button">Back</button>
+      </div>
     </div>
-
-    <div class="all">
-      <label>
-        2. What kind of ice-cream flavor do you like?
-      </label><br>
-      <select name="flavor" id="flavor">
-        <option> Vanila</option>
-        <option>Chocolate</option>
-        <option>Mint</option>
-      </select><br>
-    </div>
-
-    <div class="all">
-      <label>
-        3. Why do you want to learn coding?
-      </label><br>
-      <select name="learn" id="learn">
-        <option>It's fun</option>
-        <option>It's challenging</option>
-        <option>I don't know</option>
-      </select><br>
-    </div>
-
-    <div class="all">
-      <label> 4. Do you like coding? <br>
-        <input type="radio" name="code" value="Yes" checked> Yes
-      </label>
-      <label> 
-        <input type="radio" name="code" value="No"> No
-      </label><br>
-    </div>
-
-    <div class="all">
-      <label> 5. Do you like dog? <br>
-        <input type="radio" name="dog" value="dog1" checked> I love dogs!
-      </label>
-      <label>
-        <input type="radio" name="dog" value="dog2"> Absolutely!
-      </label><br>
-    </div>
-
-      <button type="submit" class="button">Submit</button>
-    </form>
-
-    <div id="mainOutput" class="hidden">
-      <h3>Results</h3>
-      <p id="outPut"></p>
-      <button type="button" id="backButton">Back</button>
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>
